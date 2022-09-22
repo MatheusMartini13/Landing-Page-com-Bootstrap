@@ -1,0 +1,44 @@
+*{margin:0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url(../images/backgroundLp.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  color: white;
+}
+
+.maincontent{
+  background-color: #131212f1;
+  width: 450px;
+  height: auto;
+  color: white;
+}
+
+.topLogo {
+  width: 180px;
+}
+
+.paragraph{
+  margin-bottom: 8px;
+}
+
+.btnsend{
+  &:hover{
+    color:white !important;
+  }
+}
+
+.footer{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 485px){
+  .maincontent{
+    width: auto;
+  }
+}

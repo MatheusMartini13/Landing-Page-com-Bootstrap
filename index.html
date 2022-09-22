@@ -6,18 +6,108 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- CSS Bootstrap -->
   <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
-  <title>Document</title>
+    <!-- Project CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="shortcut icon" href="./images/FAVICON-SPACEX.png" type="image/x-icon">
+  <title>Rumo a marte - OnebitX</title>
 </head>
-<body style="background-image: url(./images/backgroundLp.png); background-size: cover;";>
-  <div class="container col-sm-6 mt-3 bg-info">
-    <form class="row g-3">
-        <div class="col-md-6">
-          <label for="inputname" class="form-label">1 - Qual o seu nome?</label>
-          <input type="email" class="form-control" id="inputname">
+<body class="py-5">
+  <div class="container px-4 maincontent">
+    <div class="text-center">
+        <img src="./images/logoOneBitDark.png" alt="Logo OneBitCode" class="img-fluid mt-4 mb-3 topLogo">
+    </div>
+    <form class="row g-1">
+      <div class="col">
+        <p class="paragraph pb-0 pt-2"> 1 - Qual o seu nome?</p>
+<!-- First Name -->
+        <div class="input-group">
+                <div class="input-group-text">Primeiro nome: </div>
+              <input type="text" class="form-control" id="inputname" placeholder="Digite aqui">
         </div>
+<!-- Second Name -->
+        <div class="input-group pt-3">
+              <div class="input-group-text">Segundo nome: </div>
+            <input type="text" class="form-control" id="inputname" placeholder="Digite aqui">
+        </div>
+        <p class="paragraph pb-0 pt-3"> 2 - Qual o seu gênero?</p>
+<!-- Radio -->
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+          <label class="form-check-label" for="flexRadioDefault1">
+            Homem
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+          <label class="form-check-label" for="flexRadioDefault2">
+            Mulher
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+          <label class="form-check-label" for="flexRadioDefault3">
+            Prefiro não informar
+          </label>
+        </div>
+        <p class="paragraph pb-0 pt-2"> 3 - Marque os treinamentos que você fez:</p>
+<!-- Switches -->
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault1">
+          <label class="form-check-label" for="flexSwitchCheckDefault1">Treinamento básico de astronauta</label>
+        </div>
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault2">
+          <label class="form-check-label" for="flexSwitchCheckDefault2">Treinamento físico básico</label>
+        </div>
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault3">
+          <label class="form-check-label" for="flexSwitchCheckDefault3">Treinamento avançado de astronauta</label>
+        </div>
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault4">
+          <label class="form-check-label" for="flexSwitchCheckDefault4">Treinamento físico intenso</label>
+        </div>
+        <p class="paragraph pb-0 pt-2"> 4 - Quais você acha que são suas qualidades?</p>      
+<!-- Qualities -->
+        <div class="form-check-inline">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label" for="defaultCheck1">
+            Proativo
+          </label>
+        </div>
+        <div class="form-check-inline">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+          <label class="form-check-label" for="defaultCheck2">
+            Resistente
+          </label>
+        </div>
+        <div class="form-check-inline">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+          <label class="form-check-label" for="defaultCheck3">
+            Não vomito fácil
+          </label>
+        </div>
+        <div class="form-check-inline">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+          <label class="form-check-label" for="defaultCheck4">
+            Não temo marciano
+          </label>
+        </div>
+        <div class="form-check-inline">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
+          <label class="form-check-label" for="defaultCheck5">
+            Já vi todos os star wars
+          </label>
+        </div>
+        <div class="text-center mt-3">
+          <button type="button" class="btnsend btn btn-outline-onebtc mb-3">Enviar</button>
+        </div>
+      </div>
     </form>
   </div>
-
+<div class="container text-center footer">
+  Feito por Matheus Martini, como parte do curso OneBitCode - 2022
+</div>
   <!-- Script Bootstrap -->
   <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </body>
